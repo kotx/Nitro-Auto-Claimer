@@ -19,7 +19,7 @@ import (
 )
 
 
-var T,_ = os.Getenv("TOKEN")
+var T = os.Getenv("TOKEN")
 var Token string = string(T)
 
 var Redeemed []string
