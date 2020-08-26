@@ -19,8 +19,8 @@ import (
 )
 
 
-var T,_ = ioutil.ReadFile("token.txt")
-var Token string = strings.Replace(string(T), "\n", "", 1)
+var T,_ = os.Getenv("TOKEN")
+var Token string = string(T)
 
 var Redeemed []string
 
